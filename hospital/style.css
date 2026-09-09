@@ -1,0 +1,1703 @@
+/* ==========================
+   GENERAL
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f9ff;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+    background:#0A74DA;
+
+    position:fixed;
+
+    width:100%;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.logo img{
+
+    width:55px;
+
+    margin-right:12px;
+
+}
+
+.logo h2{
+
+    color:#fff;
+
+    font-size:24px;
+
+}
+
+.menu{
+
+    list-style:none;
+
+    display:flex;
+
+}
+
+.menu li{
+
+    margin-left:25px;
+
+}
+
+.menu li a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.menu li a:hover,
+.menu .active{
+
+    color:#FFD700;
+
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero{
+
+    width:100%;
+
+    height:90vh;
+
+    background-image:url("images/hospital-banner.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+}
+
+/* Dark overlay */
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,0.45);
+
+}
+
+/* Hero content */
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    color:white;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.hero h2{
+
+    font-size:65px;
+
+    color:#00c8ff;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+    line-height:1.7;
+
+    margin-bottom:35px;
+
+}
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn,
+.btn2{
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn{
+
+    background:#0A74DA;
+
+    color:white;
+
+}
+
+.btn:hover{
+
+    background:#065bb5;
+
+}
+
+.btn2{
+
+    background:white;
+
+    color:#0A74DA;
+
+}
+
+.btn2:hover{
+
+    background:#e8f5ff;
+
+}
+/* ================= ABOUT PAGE ================= */
+
+.about-page{
+    padding:80px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+
+    /* Background Image */
+    background-image: url("images/about-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: relative;
+}
+.page-banner h1{
+
+font-size:50px;
+
+}
+
+.page-banner p{
+
+font-size:20px;
+
+margin-top:10px;
+
+}
+
+.about-page{
+
+padding:80px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:60px;
+
+flex-wrap:wrap;
+
+}
+
+.about-image{
+
+flex:1;
+
+}
+
+.about-image img{
+
+width:100%;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+.about-text{
+
+flex:1;
+
+}
+
+.about-text h2{
+
+font-size:40px;
+
+color:#0A74DA;
+
+margin-bottom:20px;
+
+}
+
+.about-text p{
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#555;
+
+margin-bottom:20px;
+
+}
+
+.mission{
+
+padding:80px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+background:#f4f9ff;
+
+}
+
+.mission-card{
+
+background:white;
+
+padding:35px;
+
+text-align:center;
+
+border-radius:20px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+transition:.3s;
+
+}
+
+.mission-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.mission-card i{
+
+font-size:55px;
+
+color:#0A74DA;
+
+margin-bottom:20px;
+
+}
+
+.mission-card h2{
+
+margin-bottom:15px;
+
+}
+
+footer{
+
+background:#052b5b;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+}
+/* ABOUT US BACKGROUND */
+
+#about {
+    background-image: url("images/about-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/* ==========================
+   DOCTORS PAGE
+========================== */
+
+/* Background */
+.doctors-page {
+    margin: 0;
+    min-height: 100vh;
+
+    background:
+        linear-gradient(rgba(255,255,255,0.88),
+                        rgba(255,255,255,0.88)),
+        url("images/futuristic-doctor.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Doctors Grid */
+.doctor-page {
+    padding: 80px 8%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+
+    background: transparent;
+}
+/* Doctor Card */
+.doctor-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,.1);
+    transition: .3s;
+}
+
+.doctor-card:hover {
+    transform: translateY(-10px);
+}
+
+.doctor-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.doctor-card h2 {
+    color: #0A74DA;
+    margin-bottom: 8px;
+}
+
+.doctor-card h4 {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.doctor-card p {
+    margin: 10px 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.doctor-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #0A74DA;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.doctor-btn:hover {
+    background: #065bb5;
+}
+/* ==========================================
+SERVICES INTRO
+========================================== */
+/*=============================
+        SERVICES SECTION
+==============================*/
+
+.services-section{
+
+    padding:80px 40px;
+
+    background:
+    linear-gradient(rgba(125, 125, 126, 0.65),
+    rgba(122, 122, 123, 0.65)),
+    url("images/services-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    text-align:center;
+}
+.services-intro {
+
+text-align: center;
+
+padding: 70px 8% 30px;
+
+background: #4a7ab8;
+}
+
+.services-intro h2 {
+
+color: #eef0f2;
+
+font-size: 35px;
+
+margin-bottom: 15px;
+}
+
+.services-intro p {
+
+max-width: 800px;
+
+margin: auto;
+
+color: #f5eeee;
+
+line-height: 1.8;
+
+font-size: 17px;
+
+}
+.services-section{
+
+    padding:80px 40px;
+
+    background:
+    linear-gradient(rgba(255,255,255,0.82),
+                    rgba(255,255,255,0.82)),
+    url("images/services-bg.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    text-align:center;
+}
+
+.services-section h2 {
+
+font-size: 35px;
+
+color: #0A74DA;
+
+margin-bottom: 15px;
+}
+
+.services-description {
+
+max-width: 750px;
+
+margin: 0 auto 45px;
+
+color: #666;
+
+line-height : 1.8;
+
+}
+
+/* SERVICES CONTAINER */
+
+.services-container {
+
+display: grid;
+
+grid-template-columns:
+repeat(4, 1fr);
+
+gap: 25px;
+
+}
+
+/* SERVICE CARD */
+
+.service-card{
+background: rgba(255,255,255,0.95);
+border-radius: 15px;
+padding: 25px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+transition: 0.3s;
+}
+
+.service-card\:hover{
+transform: translateY(-8px);
+box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* ICON */
+
+.service-card i {
+
+font-size: 45px;
+
+color: #0A74DA;
+
+margin-bottom: 20px;
+
+}
+
+.service-card h3 {
+
+font-size: 21px;
+
+margin-bottom: 12px;
+
+color: #222;
+
+}
+
+.service-card p {
+
+color: #666;
+
+line-height: 1.6;
+
+}
+
+/* ---------- ADD BELOW THIS ---------- */
+
+.icon-circle{
+width:80px;
+height:80px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:0 auto 20px;
+background:#eaf4ff;
+}
+
+.icon-circle i{
+font-size:35px;
+color:#0A74DA;
+margin:0;
+}
+
+/* Emergency */
+.emergency .icon-circle{
+background:#ffe6e6;
+}
+.emergency .icon-circle i{
+color:#ff3b3b;
+}
+
+/* Laboratory */
+.laboratory .icon-circle{
+background:#e8f0ff;
+}
+.laboratory .icon-circle i{
+color:#0A74DA;
+}
+
+/* Pharmacy */
+.pharmacy .icon-circle{
+background:#e8ffe8;
+}
+.pharmacy .icon-circle i{
+color:#28a745;
+}
+
+/* ICU */
+.icu .icon-circle{
+background:#f2e8ff;
+}
+.icu .icon-circle i{
+color:#7b3fe4;
+}
+
+/* Ambulance */
+.ambulance .icon-circle{
+background:#fff4e6;
+}
+.ambulance .icon-circle i{
+color:#ff8c00;
+}
+
+/* Health Checkup */
+.checkup .icon-circle{
+background:#e6ffff;
+}
+.checkup .icon-circle i{
+color:#00a8b5;
+}
+
+/* Surgical Care */
+.surgery .icon-circle{
+background:#eef2ff;
+}
+.surgery .icon-circle i{
+color:#2563eb;
+}
+
+/* Radiology */
+.radiology .icon-circle{
+background:#ffe6f2;
+}
+.radiology .icon-circle i{
+color:#e91e63;
+}
+
+/* =================================
+WHY SERVICES
+================================= */
+
+.why-services {
+
+padding: 70px 8%;
+
+text-align: center;
+
+background: white;
+
+}
+
+.why-services h2 {
+
+color: #0A74DA;
+
+font-size: 32px;
+
+margin-bottom: 40px;
+
+}
+
+.why-container {
+
+display: grid;
+
+grid-template-columns:
+repeat(4, 1fr);
+
+gap: 30px;
+
+}
+
+.why-container div {
+
+padding: 20px;
+
+}
+
+.why-container i {
+font-size: 40px;
+
+color: #0A74DA;
+
+margin-bottom: 15px;
+
+}
+
+.why-container h3 {
+
+margin-bottom: 10px;
+
+}
+
+.why-container p {
+color: #666;
+
+line-height: 1.6;
+
+}
+
+/* =================================
+RESPONSIVE
+================================= */
+
+@media(max-width: 1000px) {
+
+.services-container {
+
+    grid-template-columns:
+    repeat(2, 1fr);
+
+}
+
+.why-container {
+
+    grid-template-columns:
+    repeat(2, 1fr);
+
+}
+
+}
+
+@media(max-width: 600px) {
+.services-container {
+
+    grid-template-columns: 1fr;
+
+}
+
+.why-container {
+
+    grid-template-columns: 1fr;
+
+}
+
+}
+
+/* ==========================================
+MOBILE
+========================================== */
+
+@media(max-width: 768px) {
+
+.services-page {
+
+    padding: 40px 5% 60px;
+
+}
+
+.services-intro {
+
+    padding: 50px 5% 20px;
+
+}
+
+.services-intro h2 {
+
+    font-size: 28px;
+
+}
+
+.service-highlight {
+
+    padding: 60px 5%;
+
+}
+
+}
+.service-btn{
+display:inline-block;
+margin-top:20px;
+padding:10px 25px;
+background:#9fa0a1;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.service-btn\:hover
+.title-badge{
+display:inline-block;
+background:white;
+padding:10px 25px;
+border-radius:30px;
+color:#909192;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+margin-bottom:20px;
+}
+
+.services-section h2 span{
+color:#1d50b8;
+}
+
+/* ==========================
+   DEPARTMENTS PAGE
+========================== */
+
+.departments-page{
+
+    background:
+    linear-gradient(rgba(5,40,95,0.50), rgba(5,40,95,0.50)),
+    url("images/department-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+
+    padding: 80px 8%;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+}
+
+
+/* Department Card */
+
+.department-card{
+
+    background: rgba(255,255,255,0.95);
+
+    padding: 35px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(8px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
+
+    transition: .4s;
+}
+
+.department-card:hover{
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,.35);
+}
+
+
+/* Icons */
+
+.department-card i{
+
+    font-size: 55px;
+
+    color: #0A74DA;
+
+    margin-bottom: 20px;
+
+    transition: .3s;
+}
+
+
+/* Heading */
+
+.department-card h2{
+
+    color: #0A74DA;
+
+    margin-bottom: 15px;
+}
+
+
+/* Paragraph */
+
+.department-card p{
+
+    color: #555;
+
+    line-height: 1.8;
+}
+/* ==========================
+   APPOINTMENT PAGE BACKGROUND
+========================== */
+
+body.appointment-bg {
+    margin: 0;
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(10,116,218,0.45), rgba(10,116,218,0.45)),
+        url("images/appointment-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* ==========================
+   APPOINTMENT PAGE
+========================== */
+.appointment-page{
+    padding:80px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+    background: transparent;
+    flex-wrap:wrap;
+}
+
+.appointment-image{
+
+flex:1;
+
+}
+
+.appointment-image img{
+
+width:100%;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.appointment-form{
+
+flex:1;
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+.appointment-form h2{
+
+color:#0A74DA;
+
+margin-bottom:25px;
+
+}
+
+.appointment-form form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea{
+
+padding:15px;
+
+border:1px solid #ccc;
+
+border-radius:10px;
+
+font-size:16px;
+
+}
+
+.appointment-form button{
+
+background:#0A74DA;
+
+color:white;
+
+padding:15px;
+
+border:none;
+
+border-radius:30px;
+
+font-size:18px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.appointment-form button:hover{
+
+background:#065bb5;
+
+transform:translateY(-3px);
+
+}
+
+@media(max-width:768px){
+
+.appointment-page{
+
+flex-direction:column;
+
+}
+
+}
+/* ==========================
+   CONTACT PAGE
+========================== */
+
+.contact-page{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 2.5fr;
+    gap: 40px;
+    align-items: start;
+
+    background:
+    linear-gradient(rgba(255,255,255,0.85),
+                    rgba(255,255,255,0.85)),
+    url("images/contact-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* CONTACT INFORMATION */
+
+.contact-info {
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+}
+
+.contact-info > h2 {
+
+    color: #0A74DA;
+
+    font-size: 35px;
+
+    margin-bottom: 15px;
+
+}
+
+.contact-info > p {
+
+    color: #666;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* CONTACT BOX */
+
+.contact-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    background: #f4f9ff;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+
+}
+
+.contact-box:hover {
+
+    transform: translateX(8px);
+
+    background: #e5f2ff;
+
+}
+
+.contact-box i{
+    width:60px;
+    height:60px;
+    font-size:24px;
+}
+.contact-box h3 {
+
+    margin-bottom: 5px;
+
+    color: #222;
+
+}
+
+.contact-box p {
+
+    color: #666;
+
+}
+
+
+/* EMERGENCY BOX */
+
+.contact-box.emergency {
+
+    background: #fff1f1;
+
+}
+
+.contact-box.emergency i {
+
+    background: #e53935;
+
+}
+
+
+/* WORKING HOURS */
+.working-hours {
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+    min-width: 350px;
+}
+
+.working-hours h2 {
+
+    color: #0A74DA;
+
+    font-size: 36px;
+
+    margin-bottom: 25px;
+
+}
+
+.hours-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 17px 0;
+    font-size:18px;
+
+    border-bottom: 1px solid #ddd;
+
+    color: #555;
+
+}
+
+.hours-row span:last-child {
+
+    color: #0A74DA;
+
+    font-weight: 600;
+
+}
+/* ================= MAP ================= */
+
+.map-section{
+    width:100%;
+    padding:80px 8%;
+    background:#f8fbff;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.section-title h2{
+    font-size:38px;
+    color:#0A74DA;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    font-size:18px;
+    color:#666;
+}
+
+.map-container{
+    width:100%;
+    max-width:1400px;
+    height:600px;
+    margin:0 auto;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.map-container iframe{
+    width:100%;
+    height:100%;
+    border:0;
+    display:block;
+}
+/* ================= FOOTER ================= */
+
+footer{
+    background:#0b2d5c;
+    color:white;
+    padding:50px 8%;
+    margin-top:50px;
+    position:relative;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    align-items: start;
+}
+.footer-container > div{
+    display: flex;
+    flex-direction: column;
+}
+.footer-container > div:last-child{
+    margin-top: auto;
+}
+footer hr{
+    margin:25px 0;
+}
+
+footer .copyright{
+    text-align:center;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width: 768px) {
+
+    .contact-page {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .contact-info,
+    .working-hours {
+
+        padding: 25px;
+
+    }
+
+}
+/* ==========================
+   ADMIN DASHBOARD
+========================== */
+
+.dashboard {
+
+    padding: 70px 8%;
+
+    background: #f4f9ff;
+
+    min-height: 600px;
+
+}
+
+
+/* DASHBOARD CARDS */
+
+.dashboard-cards {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+
+    margin-bottom: 50px;
+
+}
+
+
+.dashboard-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+
+}
+
+
+.dashboard-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+.dashboard-card i {
+
+    font-size: 45px;
+
+    color: #0A74DA;
+
+    margin-bottom: 15px;
+
+}
+
+
+.dashboard-card h2 {
+
+    font-size: 35px;
+
+    color: #0A74DA;
+
+}
+
+
+.dashboard-card p {
+
+    color: #666;
+
+    margin-top: 5px;
+
+}
+
+
+/* APPOINTMENT TABLE */
+
+.appointment-table {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.1);
+
+}
+
+
+.table-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+}
+
+
+.table-header h2 {
+
+    color: #0A74DA;
+
+}
+
+
+.table-header button {
+
+    background: #e53935;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+}
+
+
+.table-header button:hover {
+
+    background: #c62828;
+
+}
+
+
+/* TABLE */
+
+.table-container {
+
+    overflow-x: auto;
+
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 900px;
+
+}
+
+
+table th {
+
+    background: #0A74DA;
+
+    color: white;
+
+    padding: 15px;
+
+    text-align: left;
+
+}
+
+
+table td {
+
+    padding: 13px;
+
+    border-bottom: 1px solid #ddd;
+
+    color: #555;
+
+}
+
+
+table tr:hover {
+
+    background: #f4f9ff;
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px) {
+
+    .dashboard {
+
+        padding: 50px 5%;
+
+    }
+
+    .appointment-table {
+
+        padding: 20px;
+
+    }
+
+}
+/* ==========================
+   LOGIN & REGISTER
+========================== */
+
+.login-section {
+
+    min-height: 650px;
+
+    padding: 80px 8%;
+
+    background: #f4f9ff;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.login-box {
+
+    width: 450px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.12);
+
+    text-align: center;
+
+}
+
+
+.login-box h2 {
+
+    color: #0A74DA;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.login-box > p {
+
+    color: #777;
+
+    margin-bottom: 25px;
+
+}
+
+
+.login-box form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+}
+
+
+.login-box input {
+
+    padding: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+
+}
+
+
+.login-box input:focus {
+
+    border-color: #0A74DA;
+
+}
+
+
+.login-box button {
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #0A74DA;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+
+.login-box button:hover {
+
+    background: #065bb5;
+
+}
+
+
+.register-text {
+
+    margin-top: 25px;
+
+}
+
+
+.register-text a {
+
+    color: #0A74DA;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+}

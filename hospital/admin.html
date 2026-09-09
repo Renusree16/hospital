@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Renusree Hospital</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <img src="images/logo.png" alt="Hospital Logo">
+
+            <h2>Renusree Multi Speciality Hospital</h2>
+
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="doctors.html">Doctors</a>
+            </li>
+
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+
+            <li>
+                <a href="departments.html">Departments</a>
+            </li>
+
+            <li>
+                <a href="appointment.html">Appointment</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= ADMIN BANNER ================= -->
+
+<section class="page-banner">
+
+    <h1>Admin Dashboard</h1>
+
+    <p>Renusree Multi Speciality Hospital</p>
+
+</section>
+
+
+<!-- ================= DASHBOARD ================= -->
+
+<section class="dashboard">
+
+    <!-- STATISTICS -->
+
+    <div class="dashboard-cards">
+
+        <div class="dashboard-card">
+
+            <i class="fas fa-users"></i>
+
+            <h2 id="totalPatients">0</h2>
+
+            <p>Total Patients</p>
+
+        </div>
+
+
+        <div class="dashboard-card">
+
+            <i class="fas fa-calendar-check"></i>
+
+            <h2 id="totalAppointments">0</h2>
+
+            <p>Appointments</p>
+
+        </div>
+
+
+        <div class="dashboard-card">
+
+            <i class="fas fa-user-doctor"></i>
+
+            <h2>4</h2>
+
+            <p>Doctors</p>
+
+        </div>
+
+
+        <div class="dashboard-card">
+
+            <i class="fas fa-hospital"></i>
+
+            <h2>8</h2>
+
+            <p>Departments</p>
+
+        </div>
+
+    </div>
+
+
+    <!-- APPOINTMENT TABLE -->
+
+    <div class="appointment-table">
+
+        <div class="table-header">
+
+            <h2>Patient Appointments</h2>
+
+            <button onclick="clearAppointments()">
+                Clear All
+            </button>
+
+        </div>
+
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>S.No</th>
+
+                        <th>Patient Name</th>
+
+                        <th>Age</th>
+
+                        <th>Mobile</th>
+
+                        <th>Gender</th>
+
+                        <th>Department</th>
+
+                        <th>Doctor</th>
+
+                        <th>Date</th>
+
+                        <th>Time</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="appointmentTableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 Renusree Multi Speciality Hospital |
+        Admin Dashboard
+    </p>
+<a href="admin.html">Admin Dashboard</a>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
