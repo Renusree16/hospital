@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Menu | RenuBrew Café</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+<img src="images/logo (2).png" alt="">
+<h2>RenuBrew Café</h2>
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="menu.html" class="active">Menu</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="reservation.html">Reservation</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<section class="menu-page">
+
+<h1>Our Signature Menu</h1>
+
+<p>
+Freshly brewed coffee, handcrafted beverages, delicious desserts,
+and tasty snacks prepared with love.
+</p>
+
+<div class="menu-container">
+
+    <div class="menu-card">
+    <img src="images/americano.jpg" alt="">
+    <h3>Americano</h3>
+    <p>Classic espresso with hot water.</p>
+    <div class="price">₹169</div>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <a href="#" class="order-btn" onclick="orderCoffee('Americano'); return false;">Order Now</a>
+</div>
+
+<div class="menu-card">
+    <img src="images/macchiato.jpg" alt="">
+    <h3>Caramel Macchiato</h3>
+    <p>Espresso with steamed milk and caramel.</p>
+    <div class="price">₹249</div>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <a href="#" class="order-btn" onclick="orderCoffee('Caramel Macchiato'); return false;">Order Now</a>
+</div>
+
+<div class="menu-card">
+    <img src="images/flatwhite.jpg" alt="">
+    <h3>Flat White</h3>
+    <p>Velvety smooth espresso with microfoam.</p>
+    <div class="price">₹219</div>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <a href="#" class="order-btn" onclick="orderCoffee('Flat White'); return false;">Order Now</a>
+</div>
+
+<div class="menu-card">
+    <img src="images/frappe.jpg" alt="">
+    <h3>Coffee Frappe</h3>
+    <p>Blended iced coffee topped with whipped cream.</p>
+    <div class="price">₹269</div>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <a href="#" class="order-btn" onclick="orderCoffee('Coffee Frappe'); return false;">Order Now</a>
+</div>
+
+<div class="menu-card">
+    <img src="images/irish.jpg" alt="">
+    <h3>Irish Coffee</h3>
+    <p>Rich coffee with fresh cream.</p>
+    <div class="price">₹289</div>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <a href="#" class="order-btn" onclick="orderCoffee('Irish Coffee'); return false;">Order Now</a>
+</div>
+
+<div class="menu-card">
+    <img src="images/hazelnut.jpg" alt="">
+    <h3>Hazelnut Latte</h3>
+    <p>Latte infused with sweet hazelnut flavor.</p>
+    <div class="price">₹239</div>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <a href="#" class="order-btn" onclick="orderCoffee('Hazelnut Latte'); return false;">Order Now</a>
+</div>
+
+<div class="menu-card">
+    <img src="images/affogato.jpg" alt="">
+    <h3>Affogato</h3>
+    <p>Vanilla ice cream topped with hot espresso.</p>
+    <div class="price">₹279</div>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <a href="#" class="order-btn" onclick="orderCoffee('Affogato'); return false;">Order Now</a>
+</div>
+
+<div class="menu-card">
+    <img src="images/turkish.jpg" alt="">
+    <h3>Turkish Coffee</h3>
+    <p>Traditional rich coffee with bold flavor.</p>
+    <div class="price">₹259</div>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <a href="#" class="order-btn" onclick="orderCoffee('Turkish Coffee'); return false;">Order Now</a>
+</div>
+
+<div class="menu-card">
+<img src="images/espresso.jpg" alt="">
+<h3>Espresso</h3>
+<p>Rich and bold premium espresso.</p>
+<div class="price">₹149</div>
+<div class="rating">⭐⭐⭐⭐⭐</div>
+<a href="#" class="order-btn" onclick="orderCoffee('Espresso'); return false;">Order Now</a>
+</div>
+
+<div class="menu-card">
+<img src="images/cappuccino.jpg" alt="">
+<h3>Cappuccino</h3>
+<p>Fresh milk with smooth espresso.</p>
+<div class="price">₹199</div>
+<div class="rating">⭐⭐⭐⭐⭐</div>
+<a href="#" class="order-btn" onclick="orderCoffee('Cappuccino'); return false;">Order Now</a>
+</div>
+
+<div class="menu-card">
+<img src="images/latte.jpg" alt="">
+<h3>Vanilla Latte</h3>
+<p>Creamy latte with vanilla flavor.</p>
+<div class="price">₹229</div>
+<div class="rating">⭐⭐⭐⭐⭐</div>
+<a href="#" class="order-btn" onclick="orderCoffee('Vanilla Latte'); return false;">Order Now</a>
+</div>
+
+<div class="menu-card">
+<img src="images/roll.jpg" alt="">
+<h3>Cinnamon Roll</h3>
+<p>Soft roll with cinnamon and cream glaze.</p>
+<div class="price">₹249</div>
+<div class="rating">⭐⭐⭐⭐⭐</div>
+<a href="#" class="order-btn" onclick="orderCoffee('Mocha'); return false;">Order Now</a>
+</div>
+
+<div class="menu-card">
+<img src="images/croissant.jpg" alt="">
+<h3>Croissant</h3>
+<p>Classic buttery French pastry.</p>
+<div class="price">₹189</div>
+<div class="rating">⭐⭐⭐⭐⭐</div>
+<a href="#" class="order-btn" onclick="orderCoffee('Cold Brew'); return false;">Order Now</a>
+</div>
+
+<div class="menu-card">
+<img src="images/chocolatebrownie.jpg" alt="">
+<h3>Chocolate Brownie</h3>
+<p>Soft brownie served warm.</p>
+<div class="price">₹159</div>
+<div class="rating">⭐⭐⭐⭐⭐</div>
+<a href="#" class="order-btn" onclick="orderCoffee('Chocolate Browine'); return false;">Order Now</a>
+</div>
+
+<div class="menu-card">
+<img src="images/cheesecake.jpg" alt="">
+<h3>Cheese Cake</h3>
+<p>Creamy baked cheesecake.</p>
+<div class="price">₹249</div>
+<div class="rating">⭐⭐⭐⭐⭐</div>
+<a href="#" class="order-btn" onclick="orderCoffee('Cheese Cake'); return false;">Order Now</a>
+</div>
+
+<div class="menu-card">
+<img src="images/sandwich.jpg" alt="">
+<h3>Veg Sandwich</h3>
+<p>Fresh vegetables with cheese.</p>
+<div class="price">₹179</div>
+<div class="rating">⭐⭐⭐⭐⭐</div>
+<a href="#" class="order-btn" onclick="orderCoffee('Veg Sandwich'); return false;">Order Now</a>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>RenuBrew Café</h2>
+
+<p>Where Every Cup Tells a Story.</p>
+
+<div class="social-icons">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-x-twitter"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+</div>
+
+<p>© 2026 RenuBrew Café. All Rights Reserved.</p>
+
+</footer>
+<div id="notification" class="notification"></div>
+<script>
+function orderCoffee(item) {
+    const notification = document.getElementById("notification");
+
+    notification.innerHTML = "✅ Your <b>" + item + "</b> has been ordered successfully!";
+    notification.style.display = "block";
+
+    setTimeout(() => {
+        notification.style.display = "none";
+    }, 3000);
+}
+</script>
+</body>
+</html>
